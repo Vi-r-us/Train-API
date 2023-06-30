@@ -13,7 +13,8 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
-app.use(cors({origin: 'http://127.0.0.1:5500'}));
+// app.use(cors({origin: 'http://127.0.0.1:5500'}));
+app.use(cors({origin: 'https://vi-r-us.github.io/Train-WebApp/'}));
 
 // Mongoose configuration
 const url = "mongodb+srv://" + process.env.MONGO_USER_NAME +  ":" + process.env.MONGO_PASSWORD + "@cluster.ixbofk8.mongodb.net/trainDB";
