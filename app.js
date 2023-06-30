@@ -13,13 +13,15 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
-app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*');
-    next();
-  });
+app.use(cors({
+    origin: true,
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    allowedHeaders: '*',
+    credentials: true
+  }));
 
 // app.use(cors({origin: 'http://127.0.0.1:5500'}));
-app.use(cors({origin: 'https://vi-r-us.github.io/Train-WebApp/'}));
+// app.use(cors({origin: 'https://vi-r-us.github.io/Train-WebApp/'}));
 
 // Mongoose configuration
 const url = "mongodb+srv://" + process.env.MONGO_USER_NAME +  ":" + process.env.MONGO_PASSWORD + "@cluster.ixbofk8.mongodb.net/trainDB";
