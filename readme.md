@@ -34,11 +34,13 @@ The Train Booking API provides the following functionality:
 - **Mongoose schemas :**
 - Train: A Train having different attributes  
     - Train Number(Req), Name, Source Station, Destination Station, Seats[]
-    ![App Screenshot](https://raw.githubusercontent.com/Vi-r-us/Train-API/master/screenshots/Screenshot%202023-07-01%20115829.png)
+
+![App Screenshot](https://raw.githubusercontent.com/Vi-r-us/Train-API/master/screenshots/Screenshot%202023-07-01%20115829.png)
 
 - Seats: A Seat having different attributes 
     - Seat Number, Is Booked, Seat Type
-    ![App Screenshot](https://raw.githubusercontent.com/Vi-r-us/Train-API/master/screenshots/Screenshot%202023-07-01%20115704.png)
+
+![App Screenshot](https://raw.githubusercontent.com/Vi-r-us/Train-API/master/screenshots/Screenshot%202023-07-01%20115704.png)
 
 ## Contributing
 
